@@ -1,0 +1,72 @@
+:root {
+    --textcolor: #6EBDD6;
+    --backco: #40736F;
+    --linkco: #63D681;
+    --blockco: #3475D2;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto Mono", monospace;
+}
+
+.opinion,
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 500px;
+}
+
+label {
+    margin: 10px 0px 10px 0px;
+}
+
+legend {
+    font-size: 25px;
+}
+
+.separation {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+input {
+    font-size: 16px;
+    margin-right: 100px;
+    width: 50%;
+    height: 25px;
+}
+
+#gendre {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+#gendre label,
+#gendre input {
+    margin-left: 20px;
+}
+
+textarea {
+    margin-left: 10px;
+}
+
+#formbuttons {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#formbuttons input {
+    width: 150px;
+    margin: 0;
+}
+

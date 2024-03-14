@@ -1,0 +1,15 @@
+:root {
+    --textcolor: #6EBDD6;
+    --backco: #40736F;
+    --linkco: #63D681;
+    --blockco: #3475D2;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto Mono", monospace;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>Juan Carlos Lacruz Lacruz</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="logoimg" src="../assets/imgages/logo.jpg" alt="">
+        </div>
+        <div id="me">
+            <h1>Juan Carlos Lacruz Lacruz</h1>
+            <p>Pequenya descripción</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/biography.html">Biografia</a></li>
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <div class="separation">
+                    <label for="name">Nombre:</label>
+                    <input id="name" type="text" required>
+                </div>
+                <div class="separation">
+                    <label for="surname">Apellidos:</label>
+                    <input id="surname" type="text" required>
+                </div>
+                <div class="separation">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="separation">
+                    <label for="tel">Teléfono:</label>
+                    <input id="tel" type="tel">
+                </div>
+                <label class="separation" for="gendre" name="gendre">Género:</label>
+                <div id="gendre" class="separation">
+                    <label for="woman" name="gendre">Mujer</label>
+                    <input id="woman" name="gendre" type="radio">
+                    <label for="men" name="gendre">Hombre</label>
+                    <input id="men" name="gendre" type="radio">
+                    <label for="other" name="gendre">Otro</label>
+                    <input id="other" name="gendress" type="radio">
+                </div>
+                <div class="opinion">
+                    <label for="opinion">¿Qué necesitas?</label>
+                    <textarea name="opinion" id="opinion" cols="30" rows="10" required>Escribe aquí.</textarea>
+                </div>
+                <div id="formbuttons">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

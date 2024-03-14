@@ -1,0 +1,86 @@
+:root {
+    --textcolor: #6EBDD6;
+    --backco: #40736F;
+    --linkco: #63D681;
+    --blockco: #3475D2;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--backco);
+}
+
+h1 {
+    font-size: 30px;
+    color: var(--textcolor);
+}
+
+a {
+    color: var(--textcolor);
+}
+
+#logoimg {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+nav {
+    font-size: 25px;
+    margin: 10px 0px 30px 0px;
+}
+
+ #me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blockco);
+    margin: 10px;
+    width: 250px;
+}
+
+.container h2 {
+    text-align: center;
+}
+.container p {
+    margin: 5px;
+}
