@@ -12,84 +12,81 @@
     text-decoration: none;
     list-style: none;
     font-family: "Roboto Mono", monospace;
-    font-weight: 900;
 }
 
-body {
+main,
+header,
+#content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color: var(--backco);
-}
-
-h1 {
-    font-size: 60px;
-    font-weight: 900;
-    color: var(--textcolor);
-}
-
-a {
-    color: var(--textcolor);
 }
 
 #logoimg {
-    width: 200px;
+    width: 100px;
     mix-blend-mode: multiply;
+    margin: 20px;
+}
+
+body {
+    background-color: var(--blockco);
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+    align-items: center;
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    font-size: 25px;
-    margin-bottom: 20px;
+header p,
+header h1 {
+    width: 82%;
 }
 
-main {
-    display: flex;
-    justify-content: center;
+header p {
+    word-wrap: break-word;
+    padding-left: 3px;
 }
 
-#me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
+nav,
+nav ul {
+    margin: 20px 30px 20px 30px;
 }
 
 nav ul {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    padding: 50px;
+nav a {
+    color: var(--linkco);
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, var(--blockco), transparent);
+#content {
+    padding: 0 40px 0 40px;
+}
+
+.divSeparation {
+    width: 60%;
     margin: 10px;
-    padding: 10px 20px 10px 20px;
-    width: 250px;
 }
 
-.container h2 {
+/* .divSeparation > div {
+    height: 180px;
+} */
+
+.divSeparation > div > h2 {
+    margin-bottom: 5px;
     text-align: center;
 }
 
-.container p {
-    margin: 5px;
+.divSeparation > div > p {
+    text-align: justify;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
 }

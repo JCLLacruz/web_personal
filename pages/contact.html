@@ -12,10 +12,10 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img id="logoimg" src="../assets/imgages/logo.png" alt="">
+        <div>
+            <img id="logoimg" src="../assets/images/logo.png" alt="">
         </div>
-        <div id="me">
+        <div>
             <h1>Juan Carlos Lacruz Lacruz</h1>
             <p>Pequenya descripción</p>
         </div>
@@ -30,26 +30,25 @@
     </nav>
     <main>
         <form>
-            <fieldset id="fieldform">
+            <fieldset>
                 <legend>Formulario de Contacto</legend>
-                <div class="separation">
-                    <label for="name">Nombre:</label>
-                    <input id="name" type="text" required>
+                <div>
+                    <label for="userName">Nombre:</label>
+                    <input id="userName" type="text" required>
                 </div>
-                <div class="separation">
+                <div>
                     <label for="surname">Apellidos:</label>
                     <input id="surname" type="text" required>
                 </div>
-                <div class="separation">
+                <div>
                     <label for="email">Email:</label>
                     <input id="email" type="email" required>
                 </div>
-                <div class="separation">
+                <div>
                     <label for="tel">Teléfono:</label>
                     <input id="tel" type="tel">
                 </div>
-                <label class="separation" for="gendre" name="gendre">Género:</label>
-                <div id="gendre" class="separation">
+                <div id="gendre" name="gendre">
                     <label for="woman" name="gendre">Mujer</label>
                     <input id="woman" name="gendre" type="radio">
                     <label for="men" name="gendre">Hombre</label>
@@ -57,8 +56,8 @@
                     <label for="other" name="gendre">Otro</label>
                     <input id="other" name="gendress" type="radio">
                 </div>
-                <div class="opinion separation">
-                    <label for="opinion">¿Qué necesitas?</label>
+                <div>
+                    <label for="opinion" name="opinion">¿Qué necesitas?</label>
                     <textarea name="opinion" id="opinion" cols="30" rows="10" required>Escribe aquí.</textarea>
                 </div>
                 <div id="formbuttons">
@@ -67,6 +66,11 @@
                 </div>
             </fieldset>
         </form>
+        <div id="socialmedia">
+            <h2>Otras formas de contacto</h2>
+            <a href="https://www.instagram.com/likeajuanc/">Instagram</a>
+            <a href="https://www.linkedin.com/in/juan-carlos-lacruz-lacruz-959689159/">LinkedIn</a>
+        </div>
     </main>
 </body>
 </html>
