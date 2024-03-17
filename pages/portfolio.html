@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/portfolio.css">
     <title>Juan Carlos Lacruz Lacruz</title>
 </head>
+
 <body>
     <header>
         <div>
-            <img id="logoimg" src="../assets/images/logo.png" alt="">
+            <img id="logoimg" src="../assets/images/logo.png" alt="logo de la página web">
         </div>
         <div>
             <h1>Juan Carlos Lacruz Lacruz</h1>
-            <p>Pequenya descripción</p>
+            <p>Desarrollador Web en proceso, persona desde que tengo consciencia.</p>
         </div>
     </header>
     <nav>
@@ -25,28 +28,64 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../pages/biography.html">Biografia</a></li>
             <li><a href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/contact.html">Contacto</a></li>
         </ul>
     </nav>
     <main>
+        <div id="cancion">
+            <div>
+                <h2>Cancion de mi momento</h2>
+            </div>
+            <div>
+                <audio src="../assets\Audios\Belén Aguilera - Antagonista_yc2hgqyC08g.mp3" controls muted></audio>
+            </div>
+        </div>
         <div>
-            <div id="drawing">
-                <img src="../assets/images/draw.jpg" alt="Dibujo en carboncillo">
-                <p>Como Hobby realizo retratos a carboncillo en digital.</p>
+            <div class="divSeparation">
+                <div class="portDiv">
+                    <div id="drawing">
+                        <img class="mediaSize" src="../assets/images/draw.jpg" alt="Dibujo en carboncillo">
+                    </div>
+                    <div>
+                        <h2>Dibujo</h2>
+                        <p>Como Hobby realizo retratos a carboncillo en digital.</p>
+                    </div>
+                </div>
+                <div class="portDiv">
+                    <div id="sport">
+                        <video class="mediaSize" src="../assets/videos/sport.MP4" controls muted autoplay></video>
+                    </div>
+                    <div>
+                        <h2>Remo</h2>
+                        <p>No hace mucho que relizo remo como deporte, pero me ha enseñado lo importante que es trabajar en
+                            equipo.</p>
+                    </div>
+                </div>
             </div>
-            <div id="sport">
-                <video src="../assets/videos/sport.MP4" controls muted autoplay></video>
-                <p>No hace mucho que relizo remo como deporte, pero me ha enseöado lo importante que es trabajar en equipo.</p>
-            </div>
-            <div id="fotography">
-                <img src="../assets/images/photo.jpg" alt="Fotografía de una ventana">
-                <p>La fotografia me da alas para ser creativo y mostrar lo extraordinario de lo simple.</p>
-            </div>
-            <div id="berlin">
-                <img src="../assets/images/berlin.jpg" alt="Puerta de Brandenburgo">
-                <p>Después de 8 años en Berlin uno solo puede ser resiliente.</p>
+            <div class="divSeparation">
+                <div class="portDiv">
+                    <div id="fotography">
+                        <img class="mediaSize" src="../assets/images/photo.jpg" alt="Fotografía de una ventana">
+                    </div>
+                    <div>
+                        <h2>Fotografía</h2>
+                        <p>La fotografia me da alas para ser creativo y mostrar lo extraordinario de lo simple.</p>
+                    </div>
+                </div>
+                <div class="portDiv">
+                    <div id="berlin">
+                        <img class="mediaSize" src="../assets/images/berlin.jpg" alt="Puerta de Brandenburgo">
+                    </div>
+                    <div>
+                        <h2>Berlin</h2>
+                        <p>Después de 8 años en Berlin uno solo puede ser resiliente.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 </body>
+<footer>
+    <p><b>©</b>Juan Carlos Lacruz Lacruz. All Rigth Reserved.</p>
+</footer>
 </html>
