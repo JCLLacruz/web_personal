@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <title>Juan Carlos Lacruz Lacruz</title>
 </head>
+
 <body>
-    <header>
-        <div>
-            <img id="logoimg" src="../assets/images/logo.png" alt="logo de la página web">
-        </div>
-        <div >
-            <h1>Juan Carlos Lacruz Lacruz</h1>
-            <p>Desarrollador Web en proceso, persona desde que tengo consciencia.</p>
-        </div>
-    </header>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -29,54 +23,56 @@
         </ul>
     </nav>
     <main>
-        <div>
-            <form>
-                <fieldset>
-                    <legend>Formulario de Contacto</legend>
-                    <div>
-                        <label for="userName">Nombre:</label>
-                        <input id="userName" type="text" required autocomplete="given-name">
-                    </div>
-                    <div>
-                        <label for="lastName">Apellidos:</label>
-                        <input id="lastName" type="text" required autocomplete="family-name">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" required autocomplete="email">
-                    </div>
-                    <div>
-                        <label for="tel">Teléfono:</label>
-                        <input id="tel" type="tel" required autocomplete="tel">
-                    </div>
-                    <div id="gendre" name="gendre">
-                        <p>Género:</p>
-                        <input id="woman" name="gendre" type="radio">
-                        <label for="woman" name="gendre">Mujer</label>
-                        <input id="men" name="gendre" type="radio">
-                        <label for="men" name="gendre">Hombre</label>
-                        <input id="other" name="gendre" type="radio">
-                        <label for="other" name="gendre">Otro</label>
-                    </div>
-                        <label for="opinion" name="opinion">¿Qué necesitas?</label>
-                        <textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="Escriba aquí su opinión." required></textarea>
-                    <div id="formButtons">
-                        <input type="submit">
-                        <input type="reset">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-        <div id="socialMedia">
-            <h2>Otras formas de contacto</h2>
-            <div>
-                <a href="https://www.instagram.com/likeajuanc/">Instagram</a>
-                <a href="https://www.linkedin.com/in/juan-carlos-lacruz-lacruz-959689159/">LinkedIn</a>
-            </div>
-        </div>
+        <form id="formContact">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <div>
+                    <label for="userName">Nombre:</label>
+                    <input id="userName" type="text" required autocomplete="given-name">
+                </div>
+                <div>
+                    <label for="lastName">Apellidos:</label>
+                    <input id="lastName" type="text" required autocomplete="family-name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" required autocomplete="email">
+                </div>
+                <div>
+                    <label for="tel">Teléfono:</label>
+                    <input id="tel" type="tel" required autocomplete="tel">
+                </div>
+                <div id="gendre" name="gendre">
+                    <p>Género:</p>
+                    <input id="woman" name="gendre" type="radio">
+                    <label for="woman" name="gendre">Mujer</label>
+                    <input id="men" name="gendre" type="radio">
+                    <label for="men" name="gendre">Hombre</label>
+                    <input id="other" name="gendre" type="radio">
+                    <label for="other" name="gendre">Otro</label>
+                </div>
+                <label for="opinion" name="opinion">¿Qué necesitas?</label>
+                <textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="Escriba aquí su opinión."
+                    required></textarea>
+                <div id="formButtons">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+        <form id="socialMedia">
+            <fieldset>
+                <legend>Otras formas de contacto</legend>
+                <div>
+                    <a href="https://www.instagram.com/likeajuanc/">Instagram</a>
+                    <a href="https://www.linkedin.com/in/juan-carlos-lacruz-lacruz-959689159/">LinkedIn</a>
+                </div>
+            </fieldset>
+        </form>
     </main>
 </body>
 <footer>
     <p><b>©</b>Juan Carlos Lacruz Lacruz. All Rigth Reserved.</p>
 </footer>
+
 </html>

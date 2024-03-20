@@ -1,20 +1,33 @@
-main > div {
-    display: flex;
-    width: 80%;
-}
-
-.separation {
-    margin: 10px;
-    align-content: center;
+main {
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 2rem;
 }
 
 #bioImg img {
-    margin-top: 7px;
-    width: 200px;
+    width: 300px;
+    margin: 2rem;
 }
 
 #bioText {
-    width: 80%;
-    flex-wrap: wrap;
+    width: 60%;
+    text-wrap: wrap;
+}
 
+#bioText h2 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+
+    #bioText {
+        width: 90%;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
 }
