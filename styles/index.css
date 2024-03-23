@@ -18,6 +18,7 @@ html {
     overflow-y: scroll;
 }
 
+.divSeparation,
 body,
 main,
 header,
@@ -34,9 +35,11 @@ header,
 }
 
 body {
+    /* height: 100vh; */
     flex-direction: column;
     align-items: end;
-    background-color: var(--backco);
+    background-image: linear-gradient(to top, var(--backco)20%, transparent), url(../assets/images/berlin.jpg);
+    background-repeat: no-repeat;
 }
 
 header {
@@ -63,7 +66,10 @@ header p {
     word-wrap: break-word;
     padding-left: 8px;
     margin-top: 1rem;
-    margin-bottom: 5rem;
+}
+
+#moreButton {
+    margin-top: 8rem;
 }
 
 #moreButton a {
@@ -107,19 +113,35 @@ main {
     margin-bottom: 11rem;
 }
 
-.divSeparation {
+#content {
     width: 60%;
-    margin: 10px;
+}
+
+.divSeparation {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin: 2rem;
+    margin-top: 5rem;
 }
 
 .divSeparation > div > h2 {
-    margin-bottom: 5px;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
     text-align: center;
 }
 
 .divSeparation > div > p {
     text-align: justify;
+    font-weight: 900;
     padding: 20px;
+}
+
+.boxContent {
+    width: 100%;
+    margin-bottom: 2rem;
+    background: linear-gradient(180deg,var(--blockco) 30%, transparent);
 }
 
 footer {
@@ -154,8 +176,21 @@ footer {
         text-align: center;
     }
 
+    #moreButton {
+        margin-top: 5rem;
+    }
+
     .content {
+        flex-direction: column;
         margin-top: 10rem;
+    }
+
+    .divSeparation {
+        margin: 0;
+    }
+
+    .firstBoxContent {
+        margin-top: 4rem;
     }
 
     nav ul {
