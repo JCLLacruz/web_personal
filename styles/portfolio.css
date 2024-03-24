@@ -1,61 +1,107 @@
+#backgroundBiography,
+main,
+.divSeparation,
+.flexDiv {
+    display: flex;
+}
 
-main {
-    justify-content: start;
+nav {
+    z-index: 2;
+}
+
+#backgroundBiography {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
 }
 
 #cancion {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-top: 1.1rem;
-    margin-left: 1rem;
-    background-color: linear-gradient(var(--blockco) 50%, transparent);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+#cancion p{
+    padding-left: 1rem;
 }
 
 audio::-webkit-media-controls-panel {
-    background-color: var(--blockco);
-  }
-
-#cancion p {
-    margin-left: 1.5rem;
-}
-
-.content {
-    margin-top: 3rem;
-}
-
-.flexDiv {
-    display: flex;
-    align-items: center;
-}
-
-.textBox {
-    margin-left: 1rem;
+    background-color: var(--textcolor);
 }
 
 .mediaSize {
+    z-index: 1;
     width: 8rem;
+
+}
+
+main {
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    margin-left: 2rem;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.divSeparation {
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.flexDiv {
+    width: 50%;
+}
+
+.textBox {
+    width: 30%;
+    margin: 1rem;
+    background: linear-gradient(90deg,var(--backco) 10%, transparent);
+    z-index: 1;
 }
 
 @media screen and (max-width: 480px) {
-
-    .textBox,
-    .separation,
-    #cancion,
-    .flexDiv,
-    main div {
-        flex-direction: column;
-        align-items: center;
+    #backgroundBiography {
+        position: fixed;
+        width: 100%;
+        z-index: 0;
+        bottom: 0;
+        right: 0;
     }
 
-    nav a {
+    .content {
+        width: 90%;
+    }
+
+    nav {
         font-size: 16px;
     }
-    
-    .textBox {
-        text-align: center;
+
+    #cancion {
+        position: relative;
+        width: 90%;
+        padding-bottom: 3rem;
+    }
+
+    .divSeparation,    
+    main {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .textBox p {
+        background: linear-gradient(180deg,var(--backco) 30%, transparent);
+        width: 150%;
+    }
+
+    .flexDiv {
         margin-bottom: 2rem;
-        margin-left: 0;
     }
 }
 

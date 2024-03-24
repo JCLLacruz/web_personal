@@ -1,7 +1,20 @@
 main {
-    flex-direction: row;
-    justify-content: start;
-    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+nav {
+    z-index: 1;
+}
+
+#backgroundBiography {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
 }
 
 #bioImg img {
@@ -10,12 +23,18 @@ main {
 }
 
 #bioText {
-    width: 60%;
+    width: 35%;
     text-wrap: wrap;
+    background-color: var(--backco);
+    z-index: 1;
 }
 
 #bioText h2 {
     margin-bottom: 1rem;
+}
+
+#bioText p {
+    padding-bottom: 0.2rem;
 }
 
 .emptyDiv {
@@ -28,11 +47,21 @@ main {
         flex-direction: column;
     }
 
-    #bioText {
-        width: 90%;
-    }
-
-    nav a {
+    nav {
         font-size: 16px;
     }
+
+    #bioText {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    #backgroundBiography {
+        position: fixed;
+        width: 100%;
+        z-index: 0;
+        bottom: 0;
+        right: 0;
+    }
+  
 }
