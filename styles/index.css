@@ -61,12 +61,13 @@ main {
     margin-top: 5rem;
 }
 
-#logoimg {
+#backgroundBiography {
     position: absolute;
     width: 100%;
     z-index: 0;
     bottom: 0;
     right: 0;
+    opacity: 0.6;
 }
 
 #headerText > div {

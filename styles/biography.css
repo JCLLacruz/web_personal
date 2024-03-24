@@ -8,15 +8,6 @@ nav {
     z-index: 1;
 }
 
-#backgroundBiography {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-    bottom: 0;
-    right: 0;
-}
-
 #bioImg img {
     width: 300px;
     margin: 2rem;
@@ -25,7 +16,6 @@ nav {
 #bioText {
     width: 35%;
     text-wrap: wrap;
-    background-color: var(--backco);
     z-index: 1;
 }
 
@@ -62,6 +52,10 @@ nav {
         z-index: 0;
         bottom: 0;
         right: 0;
+    }
+
+    #bioText {
+        background: none;
     }
   
 }

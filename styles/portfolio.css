@@ -62,7 +62,6 @@ main {
 .textBox {
     width: 30%;
     margin: 1rem;
-    background: linear-gradient(90deg,var(--backco) 10%, transparent);
     z-index: 1;
 }
 
@@ -96,7 +95,6 @@ main {
     }
 
     .textBox p {
-        background: linear-gradient(180deg,var(--backco) 30%, transparent);
         width: 150%;
     }
 
