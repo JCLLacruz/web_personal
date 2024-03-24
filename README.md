@@ -10,7 +10,7 @@
 
 ### Biografía
 
-**Aquí se puede leer mi vrebe historia.**
+**Aquí se puede leer mi breve historia.**
 
 ### Portfolio
 
